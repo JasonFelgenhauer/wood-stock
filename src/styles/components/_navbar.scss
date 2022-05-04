@@ -1,0 +1,40 @@
+.nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	height: 10vh;
+	justify-content: space-between;
+	&_left,
+	&_center,
+	&_right {
+		width: 33%;
+	}
+	&_center {
+		text-align: center;
+		img {
+			width: auto;
+			height: 5vh;
+		}
+	}
+	&_right {
+		text-align: left;
+		ul {
+			li {
+				display: inline;
+				margin-right: 50px;
+				a {
+					color: $color_3;
+					font-size: 18px;
+					letter-spacing: 0.1em;
+					border-bottom: 3px transparent solid;
+					transition: all 0.3s;
+					&:hover {
+						border-color: $color_3;
+					}
+				}
+			}
+		}
+	}
+}

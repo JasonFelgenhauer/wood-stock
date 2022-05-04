@@ -1,0 +1,39 @@
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+// Variable
+
+$color_1: #000000;
+$color_2: #bc9a44;
+$color_3: #ffffff;
+
+$font: 'Raleway', sans-serif;
+
+// Reset
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	font-family: $font;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style-type: none;
+}
+
+// General
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 2000px;
+	margin: 0 auto;
+}
