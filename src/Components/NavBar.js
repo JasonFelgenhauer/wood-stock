@@ -15,24 +15,16 @@ const NavBar = () => {
 			<div className='nav_right'>
 				<ul>
 					<li>
-						<NavLink to='/about' className={(navData) => (navData.isActive ? 'nav_active' : '')}>
-							About
-						</NavLink>
+						<NavLink to='#about'>About</NavLink>
 					</li>
 					<li>
-						<NavLink to='/furnitures' className={(navData) => (navData.isActive ? 'nav_active' : '')}>
-							Furnitures
-						</NavLink>
+						<NavLink to='#furnitures'>Furnitures</NavLink>
 					</li>
 					<li>
-						<NavLink to='/shop' className={(navData) => (navData.isActive ? 'nav_active' : '')}>
-							Shop
-						</NavLink>
+						<NavLink to='#shop'>Shop</NavLink>
 					</li>
 					<li>
-						<NavLink to='/contact' className={(navData) => (navData.isActive ? 'nav_active' : '')}>
-							Contact
-						</NavLink>
+						<NavLink to='#contact'>Contact</NavLink>
 					</li>
 				</ul>
 			</div>
