@@ -42,3 +42,4 @@ npm build
 
 1. Added header and navigation bar.
 2. Added about section.
+3. Added shop section & furnitures section.

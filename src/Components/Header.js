@@ -13,7 +13,9 @@ const Header = () => {
 					<img src='../assets/wood-right.png' alt='wood right' />
 				</div>
 				<div className='header_absolute'>
-					<img src='../assets/wood-stock.png' alt='wood-stock' />
+					<figure>
+						<img src='../assets/wood-stock.png' alt='wood-stock' />
+					</figure>
 				</div>
 			</div>
 		</header>

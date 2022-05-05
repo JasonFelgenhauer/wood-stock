@@ -5,12 +5,12 @@ const NavBar = () => {
 	return (
 		<nav className='container nav'>
 			<div className='nav_left'>
-				<button></button>
+				<button>
+					<i class='fa-solid fa-bars'></i>
+				</button>
 			</div>
 			<div className='nav_center'>
-				<NavLink to='/'>
-					<img src='./assets/wood-stock.png' alt='wood stock' />
-				</NavLink>
+				<NavLink to='/'>Wood</NavLink>
 			</div>
 			<div className='nav_right'>
 				<ul>

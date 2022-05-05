@@ -1,0 +1,102 @@
+.furnitures {
+	background: $color_6;
+	position: relative;
+	height: 811px;
+	flex-direction: column;
+	h2 {
+		font-weight: 700;
+		font-size: 42px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		background: $color_3;
+		padding: 15px 80px;
+		z-index: 1;
+		margin-bottom: 20px;
+	}
+	&_box {
+		text-align: left;
+		width: 30%;
+		z-index: 1;
+		margin-left: 400px;
+		h3 {
+			font-weight: 700;
+			font-size: 42px;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			color: $color_3;
+			margin-bottom: 56px;
+		}
+		p {
+			letter-spacing: 0.1em;
+			color: $color_3;
+			line-height: 26px;
+		}
+		button {
+			margin-left: 50px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			background: none;
+			color: $color_3;
+			border: 2px $color_2 solid;
+			padding: 15px 40px;
+			margin-top: 54px;
+			position: relative;
+			cursor: pointer;
+			transition: all 0.3s;
+			&::before {
+				position: absolute;
+				left: 95%;
+				top: 50%;
+				content: '';
+				background: $color_3;
+				width: 150px;
+				height: 2px;
+			}
+			&:hover {
+				background: $color_2;
+				color: $color_3;
+			}
+		}
+	}
+	&_absolute {
+		figure {
+			position: absolute;
+			top: 0;
+			left: 20%;
+			z-index: 0;
+			&::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				content: '';
+				width: 100%;
+				height: 100%;
+				background: rgba(188, 154, 68, 0.55);
+			}
+		}
+		div {
+			position: absolute;
+			top: 25px;
+			right: 50px;
+			color: $color_3;
+			font-size: 18px;
+			letter-spacing: 0.1em;
+			border-bottom: 3px transparent solid;
+			font-size: 2em;
+			font-weight: 700;
+			&::before {
+				position: absolute;
+				top: 50%;
+				left: calc(50% - 17px);
+				content: '';
+				width: 41px;
+				height: 3px;
+				background: $color_2;
+			}
+		}
+		img {
+			height: 100%;
+			width: auto;
+		}
+	}
+}

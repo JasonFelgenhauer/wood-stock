@@ -18,6 +18,19 @@ header {
 	&_absolute {
 		width: 20%;
 		height: 20%;
+		figure {
+			position: relative;
+			&::before {
+				position: absolute;
+				top: 15%;
+				left: 16%;
+				content: '';
+				width: 50%;
+				height: 5%;
+				background: $color_2;
+				border-radius: 4px;
+			}
+		}
 		img {
 			width: 100%;
 			height: auto;
