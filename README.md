@@ -2,7 +2,8 @@
 
 # Wood Stock
 
-Project : [here](https://github.com/JasonFelgenhauer/wood-stock)
+This project was carried out to confirm my skills in Front-End.
+Project : [here](http://wood-stock.jason-fel.be)
 
 ## Get the project
 
