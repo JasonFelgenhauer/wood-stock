@@ -8,15 +8,13 @@ const Contact = () => {
 				<form>
 					<div>
 						<input type='text' placeholder='First name' />
-					</div>
-					<div>
 						<input type='text' placeholder='Last name' />
 					</div>
 					<div>
 						<input type='email' placeholder='Mail address' />
 					</div>
 					<div>
-						<textarea placeholder='Message'></textarea>
+						<textarea placeholder='Message' cols='10' rows='15'></textarea>
 					</div>
 				</form>
 			</div>

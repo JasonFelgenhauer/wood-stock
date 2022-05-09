@@ -1,0 +1,56 @@
+.contact {
+	padding: 116px;
+	flex-direction: column;
+	h2 {
+		font-weight: 500;
+		font-size: 24px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		margin-bottom: 65px;
+		align-self: flex-start;
+		margin-left: 25%;
+	}
+	&_form {
+		input,
+		textarea {
+			border: 1px $color_7 solid;
+			border-radius: 34px;
+			padding: 5px 20px;
+			width: 100%;
+			margin: 20px 0;
+			resize: none;
+			font-size: 18px;
+			letter-spacing: 0.1em;
+			outline: none;
+			font-weight: 500;
+			transition: all 0.6s;
+			&::placeholder {
+				transition: all 0.6s;
+				color: $color_8;
+			}
+			&:hover {
+				background: $color_7;
+				color: $color_3;
+				&::placeholder {
+					color: $color_3;
+				}
+			}
+		}
+		textarea {
+			padding: 15px 25px;
+		}
+		div:nth-child(1) {
+			input {
+				width: calc(50% - 15px);
+			}
+			input:nth-child(1) {
+				margin-right: 30px;
+			}
+		}
+		div:nth-child(2) {
+			input {
+				width: 65%;
+			}
+		}
+	}
+}

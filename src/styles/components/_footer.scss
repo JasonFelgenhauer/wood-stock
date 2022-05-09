@@ -1,0 +1,21 @@
+.footer {
+	background: $color_1;
+	height: 150px;
+	p {
+		font-size: 5em;
+		color: $color_3;
+		letter-spacing: 25px;
+		text-transform: uppercase;
+		font-weight: 700;
+		position: relative;
+		&::before {
+			position: absolute;
+			top: calc(50% - 8px);
+			left: calc(20% - 5px);
+			content: '';
+			width: 166px;
+			height: 12px;
+			background: $color_2;
+		}
+	}
+}
