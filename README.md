@@ -36,7 +36,7 @@ npm start
 To build the project:
 
 ```
-npm build
+npm run build
 ```
 
 ## Push history
@@ -45,6 +45,7 @@ npm build
 2. Added about section.
 3. Added shop section & furnitures section.
 4. Added contact section & footer.
+5. Update README.
 
 ## TODO:
 
