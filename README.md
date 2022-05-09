@@ -43,3 +43,12 @@ npm build
 1. Added header and navigation bar.
 2. Added about section.
 3. Added shop section & furnitures section.
+4. Added contact section & footer.
+
+## TODO:
+
+-   [ ] Add responsive
+
+## Screenshot
+
+![index](http://pics.jason-fel.be/uploads/1652083145image_2022-05-09_095902800.png)
