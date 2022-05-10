@@ -1,19 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
+	const [display, setDisplay] = useState(true);
+
+	function menu() {
+		if (display) {
+			document.getElementById('menu_ul').style.top = '50px';
+			setDisplay(false);
+		} else {
+			document.getElementById('menu_ul').style.top = '-250%';
+			setDisplay(true);
+		}
+	}
+
 	return (
 		<nav className='container nav'>
 			<div className='nav_left'>
-				<button>
-					<i class='fa-solid fa-bars'></i>
+				<button onClick={menu}>
+					<i className='fa-solid fa-bars'></i>
 				</button>
 			</div>
 			<div className='nav_center'>
 				<NavLink to='/'>Wood</NavLink>
 			</div>
 			<div className='nav_right'>
-				<ul>
+				<ul id='menu_ul'>
 					<li>
 						<NavLink to='#about'>About</NavLink>
 					</li>

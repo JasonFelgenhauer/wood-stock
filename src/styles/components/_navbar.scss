@@ -2,17 +2,13 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 100vw;
 	z-index: 1;
 	height: 10vh;
 	justify-content: space-between;
-	&_left,
-	&_center,
-	&_right {
-		width: 33%;
-	}
 	&_left {
 		button {
+			display: none;
 			margin-left: 25px;
 			background: none;
 			border: none;
@@ -24,7 +20,8 @@
 		}
 	}
 	&_center {
-		text-align: center;
+		width: 25%;
+		text-align: left;
 		a {
 			color: $color_3;
 			font-size: 18px;
@@ -60,6 +57,31 @@
 					&:hover {
 						border-color: $color_3;
 					}
+				}
+			}
+		}
+	}
+	@media (max-width: 1000px) {
+		&_left {
+			button {
+				display: block;
+			}
+		}
+		&_right {
+			ul {
+				position: absolute;
+				top: -250%;
+				left: 12.5%;
+				z-index: 10;
+				width: 75%;
+				background: $color_5;
+				padding: 10px;
+				border-radius: 5px;
+				text-align: center;
+				transition: all 0.3s;
+				li {
+					display: block;
+					margin: 20px 0;
 				}
 			}
 		}

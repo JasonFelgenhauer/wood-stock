@@ -18,6 +18,9 @@ header {
 	&_absolute {
 		width: 20%;
 		height: 20%;
+		position: absolute;
+		top: 40%;
+		left: 40%;
 		figure {
 			position: relative;
 			&::before {
@@ -35,8 +38,24 @@ header {
 			width: 100%;
 			height: auto;
 		}
-		position: absolute;
-		top: 40%;
-		left: 40%;
+	}
+	@media (max-width: 1000px) {
+		&_absolute {
+			width: 40%;
+			height: 40%;
+			top: 30%;
+			left: 30%;
+		}
+		&_left {
+			display: none;
+		}
+		&_right {
+			img {
+				width: auto;
+				height: 100%;
+			}
+		}
+	}
+	@media (max-width: 750px) {
 	}
 }

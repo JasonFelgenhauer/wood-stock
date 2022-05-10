@@ -46,6 +46,7 @@ npm run build
 3. Added shop section & furnitures section.
 4. Added contact section & footer.
 5. Update README.
+6. Added responsive for about & shop
 
 ## TODO:
 

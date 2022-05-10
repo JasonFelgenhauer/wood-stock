@@ -25,6 +25,7 @@ $font: 'Raleway', sans-serif;
 html,
 body {
 	font-family: $font;
+	overflow-x: hidden;
 }
 a {
 	text-decoration: none;
