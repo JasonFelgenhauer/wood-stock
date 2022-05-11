@@ -53,4 +53,25 @@
 			}
 		}
 	}
+	@media (max-width: 650px) {
+		padding: 100px 25px;
+	}
+	@media (max-width: 400px) {
+		div:nth-child(1) {
+			input {
+				width: 100%;
+			}
+			input:nth-child(1) {
+				margin-right: 0px;
+			}
+		}
+		div:nth-child(2) {
+			input {
+				width: 100%;
+			}
+		}
+	}
+	@media (max-width: 300px) {
+		padding: 100px 10px;
+	}
 }

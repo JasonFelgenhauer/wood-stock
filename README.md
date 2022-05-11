@@ -47,10 +47,11 @@ npm run build
 4. Added contact section & footer.
 5. Update README.
 6. Added responsive for about & shop
+7. Added responsive for furnitures, contact and footer.
 
 ## TODO:
 
--   [ ] Add responsive
+-   [x] Add responsive
 
 ## Screenshot
 

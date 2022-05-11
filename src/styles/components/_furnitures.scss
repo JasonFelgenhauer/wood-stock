@@ -1,8 +1,9 @@
 .furnitures {
 	background: $color_6;
 	position: relative;
-	height: 811px;
+	min-height: 811px;
 	flex-direction: column;
+	padding: 50px 0;
 	h2 {
 		font-weight: 700;
 		font-size: 42px;
@@ -97,6 +98,76 @@
 		img {
 			height: 100%;
 			width: auto;
+		}
+	}
+	@media (max-width: 1200px) {
+		h2 {
+			align-self: flex-start;
+			font-size: 30px;
+			padding: 10px 60px;
+			margin-left: 50px;
+		}
+		&_box {
+			align-self: center;
+			width: 80%;
+			margin-left: 0px;
+			h3 {
+				font-size: 30px;
+			}
+			p {
+				text-align: justify;
+			}
+			button {
+				margin-left: 100px;
+				padding: 10px 40px;
+			}
+		}
+		&_absolute {
+			figure {
+				&::before {
+					height: 90%;
+				}
+			}
+		}
+	}
+	@media (max-width: 600px) {
+		&_box {
+			width: 100%;
+			padding: 10px;
+		}
+	}
+	@media (max-width: 450px) {
+		h2 {
+			font-size: 20px;
+			padding: 10px 20px;
+			margin-left: 0px;
+		}
+		&_box {
+			align-self: flex-end;
+			h3 {
+				font-size: 20px;
+			}
+			button {
+				margin-left: 50px;
+				padding: 10px 20px;
+				&::before {
+					width: 75px;
+				}
+			}
+		}
+		&_absolute {
+			figure {
+				&::before {
+					height: 90%;
+				}
+			}
+		}
+	}
+	@media (max-width: 300px) {
+		&_absolute {
+			div {
+				display: none;
+			}
 		}
 	}
 }
